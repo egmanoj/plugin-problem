@@ -6,10 +6,12 @@
  * Detailed information about configuring a multi-project build in Gradle can be found
  * in the user manual at https://docs.gradle.org/6.0.1/userguide/multi_project_builds.html
  */
-pluginManagement {
+buildscript {
     repositories {
-        gradlePluginPortal()
         jcenter()
+    }
+    dependencies {
+        classpath("com.github.sedovalx.gradle:gradle-aspectj-binary:1.0.37")
     }
 }
 
